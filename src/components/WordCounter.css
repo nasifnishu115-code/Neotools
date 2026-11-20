@@ -1,0 +1,237 @@
+/* Word Counter Styles - NeoTools Theme */
+
+.word-counter-page {
+  min-height: 75vh;
+  padding: 30px 16px 80px;
+  color: #f7f6ff;
+}
+
+.word-counter-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wc-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  color: #c9bfdc;
+  background: #191225;
+  border: 1px solid #332542;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wc-back-btn:hover {
+  color: #ffffff;
+  border-color: #923cff;
+  background: #231835;
+  transform: translateX(-2px);
+}
+
+.wc-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wc-icon-wrapper {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px #3b82f630;
+}
+
+.wc-header h1 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(30px, 5vw, 40px);
+  font-weight: 700;
+}
+
+.wc-header p {
+  color: #a497b8;
+  font-size: 15px;
+}
+
+/* Stats Grid */
+.wc-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.wc-stat-card {
+  padding: 18px 14px;
+  background: #151020;
+  border: 1px solid #2f213e;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 8px 24px #00000020;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.wc-stat-card:hover {
+  transform: translateY(-2px);
+  border-color: #8749e8;
+}
+
+.wc-stat-card.primary {
+  border-color: #8749e860;
+  background: linear-gradient(180deg, #26163b, #151020);
+}
+
+.wc-stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.wc-stat-card.primary .wc-stat-num {
+  color: #d4a4ff;
+}
+
+.wc-stat-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9283a8;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.wc-stat-card.highlight {
+  grid-column: span 1;
+}
+
+.wc-read-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #93c5fd;
+}
+
+.wc-read-meta span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Editor Card */
+.wc-editor-card {
+  background: #151020;
+  border: 1px solid #332344;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px #00000030;
+  overflow: hidden;
+}
+
+.wc-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #1b1328;
+  border-bottom: 1px solid #2f203d;
+}
+
+.wc-toolbar-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #ded4f0;
+}
+
+.wc-toolbar-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.wc-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #c4b6dc;
+  background: #261938;
+  border: 1px solid #3d2a52;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.wc-tool-btn:hover:not(:disabled) {
+  color: #ffffff;
+  border-color: #8749e8;
+  background: #35214e;
+}
+
+.wc-tool-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.wc-tool-btn.danger:hover:not(:disabled) {
+  color: #fca5a5;
+  border-color: #ef444450;
+  background: #ef444420;
+}
+
+.wc-textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: #f4eeff;
+  background: #0f0b18;
+  border: none;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.7;
+  resize: vertical;
+  min-height: 280px;
+  outline: none;
+}
+
+.wc-textarea::placeholder {
+  color: #6d6282;
+}
+
+.wc-footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #140d1f;
+  border-top: 1px solid #271a35;
+  font-size: 12px;
+  color: #8f82a4;
+}
+
+.wc-live-indicator {
+  color: #86efac;
+  font-weight: 600;
+}
+

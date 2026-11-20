@@ -1,0 +1,155 @@
+.json-page {
+  min-height: 70vh;
+  padding: 30px 20px 60px;
+  color: #f8f7ff;
+}
+
+.json-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  margin-bottom: 30px;
+  color: #ded5ff;
+  background: #191225;
+  border: 1px solid #332542;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.json-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.json-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  color: #d5a5ff;
+  background: #342044;
+  border-radius: 17px;
+}
+
+.json-heading h1 {
+  margin: 0 0 10px;
+  font-size: clamp(28px, 5vw, 38px);
+}
+
+.json-heading p {
+  color: #aaa0b8;
+}
+
+.json-workspace {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.json-panel {
+  min-width: 0;
+  padding: 18px;
+  background: #15101f;
+  border: 1px solid #342640;
+  border-radius: 16px;
+}
+
+.json-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.json-panel-header button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  color: #ded5ff;
+  background: #281b37;
+  border: 1px solid #423052;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.json-panel-header button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.json-panel textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  padding: 14px;
+  color: #e8defa;
+  background: #0d0a14;
+  border: 1px solid #382b47;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.json-panel textarea:focus {
+  outline: 2px solid #a66cff;
+  outline-offset: 1px;
+}
+
+.json-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.json-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  padding: 12px;
+  color: #fff;
+  background: linear-gradient(100deg, #8749e8, #d34ca5);
+  border: 0;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.json-actions .json-secondary {
+  background: #30203e;
+  border: 1px solid #493457;
+}
+
+.json-error {
+  overflow-wrap: anywhere;
+  color: #ff8da5;
+  font-size: 13px;
+}
+
+.json-success {
+  color: #82e8b0;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .json-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .json-panel textarea {
+    min-height: 220px;
+  }
+}

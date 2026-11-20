@@ -1,0 +1,267 @@
+/* Color Palette Styles - NeoTools Theme */
+
+.palette-page {
+  min-height: 75vh;
+  padding: 30px 16px 80px;
+  color: #f7f6ff;
+}
+
+.palette-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.palette-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  color: #c9bfdc;
+  background: #191225;
+  border: 1px solid #332542;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.palette-back-btn:hover {
+  color: #ffffff;
+  border-color: #923cff;
+  background: #231835;
+  transform: translateX(-2px);
+}
+
+.palette-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.palette-icon-wrapper {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #10b981, #06b6d4);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px #10b98130;
+}
+
+.palette-header h1 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(30px, 5vw, 40px);
+  font-weight: 700;
+}
+
+.palette-header p {
+  color: #a497b8;
+  font-size: 15px;
+}
+
+/* Palette Controls */
+.palette-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  background: #151020;
+  border: 1px solid #332344;
+  border-radius: 18px;
+}
+
+.palette-modes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mode-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #a89bb8;
+  margin-right: 4px;
+}
+
+.palette-mode-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #c4b6dc;
+  background: #20172e;
+  border: 1px solid #362648;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.palette-mode-btn:hover {
+  color: #ffffff;
+  border-color: #8749e8;
+  background: #2b1b3d;
+}
+
+.palette-mode-btn.active {
+  color: #ffffff;
+  background: #391c53;
+  border-color: #ec4899;
+  font-weight: 600;
+  box-shadow: 0 0 12px #ec489925;
+}
+
+.palette-main-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.palette-generate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px #a855f730;
+  transition: all 0.2s ease;
+}
+
+.palette-generate-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px #ec489940;
+}
+
+.palette-copy-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #ded4f0;
+  background: #241738;
+  border: 1px solid #432b5d;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.palette-copy-all-btn:hover {
+  color: #ffffff;
+  border-color: #a855f7;
+  background: #321e4e;
+}
+
+/* Swatches Grid */
+.palette-bars-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  min-height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px #00000040;
+}
+
+@media (max-width: 768px) {
+  .palette-bars-grid {
+    grid-template-columns: 1fr;
+    min-height: 480px;
+  }
+}
+
+.palette-swatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 16px;
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 200px;
+}
+
+.palette-swatch:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.swatch-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.swatch-btn {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  backdrop-filter: blur(8px);
+}
+
+.swatch-btn:hover {
+  transform: scale(1.08);
+}
+
+.swatch-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.swatch-hex-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: transform 0.15s ease;
+}
+
+.swatch-hex-pill:hover {
+  transform: scale(1.05);
+}
+
+.swatch-copy-hint {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.palette-footer-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #9f91b7;
+}
+

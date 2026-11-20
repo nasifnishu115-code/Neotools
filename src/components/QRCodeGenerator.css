@@ -1,0 +1,122 @@
+
+.qr-page {
+  min-height: 70vh;
+  padding: 32px 20px 60px;
+  color: #f8f7ff;
+}
+
+.qr-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  padding: 10px 14px;
+  color: #ded5ff;
+  background: #191225;
+  border: 1px solid #332542;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.qr-card {
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 32px;
+  background: #15101f;
+  border: 1px solid #342640;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px #0003;
+}
+
+.qr-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  color: #d4a4ff;
+  background: #342044;
+  border-radius: 16px;
+}
+
+.qr-card h1 {
+  margin: 22px 0 8px;
+  font-size: clamp(25px, 5vw, 32px);
+}
+
+.qr-card > p {
+  color: #a9a0b8;
+  line-height: 1.6;
+}
+
+.qr-card label {
+  display: block;
+  margin: 24px 0 10px;
+  font-size: 14px;
+}
+
+.qr-card textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  color: #fff;
+  background: #0e0b16;
+  border: 1px solid #40304f;
+  border-radius: 12px;
+  font: inherit;
+  resize: vertical;
+}
+
+.qr-card textarea:focus {
+  outline: 2px solid #a66cff;
+  outline-offset: 2px;
+}
+
+.qr-generate,
+.qr-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 16px;
+  padding: 13px;
+  color: #fff;
+  background: linear-gradient(100deg, #8749e8, #d34ca5);
+  border: 0;
+  border-radius: 11px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.qr-result {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+}
+
+.qr-result img {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+}
+
+.qr-result .qr-download {
+  color: #fff;
+  background: #28183b;
+}
+
+.qr-error {
+  color: #ff8eaa;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .qr-card {
+    padding: 22px;
+  }
+}
